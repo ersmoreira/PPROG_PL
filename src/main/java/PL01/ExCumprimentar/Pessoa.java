@@ -38,9 +38,8 @@ public class Pessoa {
         this.idade = idade;
     }
 
-
     public String toString() {
-        return String.format("O nome é %s e tenho %d anos", getNome(), getIdade());
+        return String.format("O meu nome é %s e tenho %d anos", getNome(), getIdade());
     }
 
 }
