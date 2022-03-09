@@ -1,4 +1,4 @@
-package PL01.ExCumprimentar;
+package PL01A.ExCumprimentar;
 
 public class Pessoa {
 
