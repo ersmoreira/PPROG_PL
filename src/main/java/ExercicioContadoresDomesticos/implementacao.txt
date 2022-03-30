@@ -1,0 +1,54 @@
+contador
+	contador eletricidade
+		tarifario simples
+		bi horario
+	contador gas
+
+contador
+	identificador
+	cliente
+	consumo
+	constantes por omissao
+	construtores
+	get set instancia
+	toString
+	abstract calculaCustoConsumo
+
+contador electricidade
+	static final PREFIXO_CONTADOR_ELECTRICIDADE = "ELECT-"
+	static totalContadoresElectricidade = 0
+	get totalContadoresElectricidade
+
+contador gas
+	static final PREFIXO_CONTADOR_GAS = "GAS-"
+	static custoM3 = 0.8f
+	static totalContadoresGas = 0
+	construtores
+	toString
+	calculaCustoConsumo	consumo * custoM3
+	get custoM3 + totalContadoresGas
+	set custoM3
+
+bihorario
+    consumoHorasVazio
+    constantes omissao
+    static consumoKwHHorasVazio = 0.066f
+    static consumoKwHHHorasForaVazio = 0.14f
+    construtores
+    get set variaveis instancia
+    toString
+    calculaCustoConsumo     consumoKwHHorasVazio * consumoHorasVazio + consumo * consumoKwHHHorasForaVazio
+    get set variaveis classe
+
+tarifario simples
+    potencia
+    constantes por omissao
+    static custoKwH1 = 0.13f
+    static custoKwH2 = 0.16f
+    static limite = 6.9
+    construtores
+    get e set instancia
+    toString
+    calculaCustoConsumo     determinaCustoKwH * consumo
+    determinaCustoKwH
+    get set variaveis classe
