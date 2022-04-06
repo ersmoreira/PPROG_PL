@@ -1,0 +1,7 @@
+pessoa
+    aluno
+        bolseiro        implements pagavel
+    professor           implements pagavel
+
+interface pagavel
+    metodo abstracto para calculo do pagamento
